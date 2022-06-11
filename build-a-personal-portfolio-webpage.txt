@@ -1,0 +1,290 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Adam's Portfolio</title>
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <ul id="nav-list">
+        <li>
+          <a href="#welcome-section">About</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul> 
+    </nav>
+
+    <section id="welcome-section">
+      <h1>Hello, I am Adam</h1>
+      <p>a student of computer science and mathematics</p>
+    </section>
+
+    <section id="projects">
+      <h2>These are some of my projects</h2>
+      <div id="projects-container">
+         <div class="project project-tile">
+           <a 
+           href="https://codepen.io/aparness001/pen/mdXQpzp"
+           target="_blank">
+            <img
+            class="project-image"
+            src="https://i.imgur.com/nGMQ462.png"
+            alt="project"
+          />
+          <p class="subtext">Product Landing Page</p>
+           </a>
+         </div>
+         <div class="project">
+           <a 
+           href="https://codepen.io/aparness001/pen/jOZQYvd"
+           target="_blank">
+            <img
+            class="project-image"
+            src="https://i.imgur.com/3WkVF3l.png"
+            alt="project"
+          />
+          <p class="subtext">Documentation Page</p>
+           </a>
+         </div>
+         <div class="project">
+           <a 
+           href="https://codepen.io/aparness001/pen/YzeWGjQ"
+           target="_blank">
+            <img
+            class="project-image"
+            src="https://i.imgur.com/cRTxvbc.png"
+            alt="project"
+          />
+          <p class="subtext">Survery Form</p>
+           </a>
+         </div>
+         <div class="project">
+           <a 
+           href="https://codepen.io/aparness001/pen/eYVZBJB"
+           target="_blank">
+            <img
+            class="project-image"
+            src="https://i.imgur.com/Ax7uHhR.png"
+            alt="project"
+          />
+          <p class="subtext">Tribute Page</p>
+           </a>
+         </div>
+      </div>  
+    </section>  
+
+    <section id="contact">
+        <h2 class="contact-header">
+          Contact me below...
+        </h2>
+        <div class="contact-links">
+          <a href="mailto:adamdparness@icloud.com" class="btn contact-details"><i class="fas fa-at"></i><span>&#x2709;</span> Send an email</a
+        >
+          <a href="tel:650-278-5902" class="btn contact-details"
+          ><i class="fas fa-mobile-alt"></i>	<span>&#9742;</span> Call me</a
+        >
+        <a href="https://codepen.io/aparness001" class="btn contact-details"
+        target="_blank" id="profile-link">
+        <img id="codepen-logo" src="https://cdn2.iconfinder.com/data/icons/social-icons-33/128/Codepen-512.png">
+          Codepen Profile
+        </a>
+        </div>
+      
+    </section>
+  </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media (max-width:720px){
+  .subtext {
+    font-size: 1.25em;
+  }
+}
+
+#navbar{
+  display:flex;
+  justify-content:flex-end;
+  align-items:center;
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height:50px;
+  background: #9370db;
+  color:#191970;
+  padding: .5rem;
+  
+  
+}
+
+ul {
+  padding:0;
+  margin:0;
+  
+}
+
+#nav-list a{
+  display:block;
+  font-size: 2rem;
+  padding: 1.5rem;
+  color:#191970;
+  text-decoration:none;
+  font-family: "Poppins", sans-serif;
+}
+
+#nav-list{
+  display:flex;
+  list-style:none;
+}
+
+#nav-list a:hover {
+  background:#ACE1AF;
+  height:35%;
+  
+}
+
+
+
+#welcome-section {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(62deg,#8EC5FC,#E0C3FC);
+  
+}
+
+ h1,h2 {
+  font-weight: 700;
+   font-family: 'Raleway', sans-serif;
+   padding:2px 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size:2rem;
+  border-bottom: 0.2rem solid black;
+   margin: 0 auto 6rem auto;
+   max-width:600px;
+}
+
+#welcome-section > p {
+  font-style: italic;
+  font-size:1.5rem;
+}
+
+
+#projects {
+  text-align: center;
+  padding: 10rem 2rem;
+  background: linear-gradient(#C9D6FF,#E2E2E2);
+  
+}
+
+#projects-container {
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  
+}
+
+.project{
+  background:#ACE1AF;
+  border-style:solid;
+  height:30rem;
+  font-family: "Poppins", sans-serif;
+  
+}
+
+
+.project-image {
+  height: calc(100% - 4.5rem);
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration:none;
+}
+
+a > p {
+  display:flex;
+  justify-content:space-evenly;
+  margin-top: 20px;
+  color:#191970;
+  text-decoration: none;
+  font-size:175%;
+}
+
+#contact {
+  background:#696969;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 80vh;
+  padding: 0 2rem;
+}
+
+.contact-header{
+  font-size:2.5rem;
+  text-align:center;
+  border-bottom:#989898;
+  color:#f0f0f0;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 2px;
+}
+
+.contact-details {
+  font-size: 1.8rem;
+  text-shadow: 2px 2px 1px #1f1f1f;
+  transition: transform 0.3s ease-out;
+  color:#f0f0f0;
+}
+
+#codepen-logo {
+  height:30px;
+  width:30px;
+}
+
+
+
+** end of undefined **
+
