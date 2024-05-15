@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @AdamParness
 - 👀 I’m interested in computer science and mathematics
-- 🌱 I’m currently learning html and css
+- 🌱 I’m currently learning machine learning libraries
 - 📫 How to reach me adamparness726@gmail.com
 
 <!---
